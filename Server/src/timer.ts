@@ -9,11 +9,11 @@ export class Timer{
 		this.tick_w=setInterval("clock_w()",604800000);
 	}
 
-	clock_s(){
+	public clock_s(){
    		
  	}
 
-	clock_w(){
+	public clock_w(){
    		
  	}
  

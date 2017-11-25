@@ -9,7 +9,7 @@ export module Construction{
 			this.data_needed=data_needed;
 		}
 
-		build(data_provided:number){
+		public build(data_provided:number){
 
 		}
 	}
@@ -30,7 +30,7 @@ export module Construction{
 			this.energy_consuption=energy_consuption;
 		}
 
-		consume():number{
+		public consume():number{
 			return this.data_needed;
 		}
 	}

@@ -15,24 +15,43 @@ export module Entity{
 			this.data=0;
 		}
 
-		get_energy():number{
+		public get_energy():number{
 			return this.energy;
 		}
 
-		get_data():number{
+		public get_data():number{
 			return this.data;
 		}
 
-		set_energy(energy:number){
+		public set_energy(energy:number){
 			this.energy=energy;
 		}
 
-		set_data(data:number){
+		public set_data(data:number){
 			this.data=data;
 		}
 	}
 
 	export class AI{
 		id:number;
+		army:Array<Minion>;
+
+		constructor(){
+			this.id=0;
+		}
+
+		create_minions(nb:number){
+			for (var i = 0; i < nb; i++) {
+    			this.army.push(new Minion(100));
+			}
+		}
+	}
+
+	export class Minion{
+		hp:number;
+
+		constructor(hp:number){
+			this.hp=hp;
+		}
 	}
 }

@@ -7,11 +7,11 @@ export class Game extends Timer{
 		super();
 	}
 
-	clock_s(){
+	public clock_s(){
 		
 	}
 
-	clock_w(){
+	public clock_w(){
 		
 	}
 }
