@@ -1,8 +1,7 @@
-import { sayHello } from "./greet";
+import { SimpleGame } from "./game";
 
-function showHello(divName: string, name: string) {
-  const elt = document.getElementById(divName);
-  elt.innerText = sayHello(name);
-}
+window.onload = () => {
 
-showHello("greeting", "BENOXIID !!");
+    var game = new SimpleGame();
+
+};
