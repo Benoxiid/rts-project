@@ -1,7 +1,21 @@
 import {Construction} from "./construction";
 import {Timer} from "./timer";
 
-var clk=new Timer();
+export class Game extends Timer{
+	
+	constructor(){
+		super();
+	}
+
+	clock_s(){
+		
+	}
+
+	clock_w(){
+		
+	}
+}
+
 
 
 

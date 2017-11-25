@@ -1,13 +1,19 @@
 import {Construction} from "./construction";
 
 export class Timer{
-	tick:number;
+	tick_s:number;
+	tick_w:number;
 
 	constructor(){
-		this.tick=setInterval("clock()", 1000);
+		this.tick_s=setInterval("clock_s()",1000);
+		this.tick_w=setInterval("clock_w()",604800000);
 	}
 
-	clock(){
+	clock_s(){
+   		
+ 	}
+
+	clock_w(){
    		
  	}
  

@@ -3,7 +3,6 @@ export module Construction{
 
 		player_id:number;
 		data_needed:number;
-		tick:number;
 
 		constructor(player_id:number,data_needed:number) {
 			this.player_id=player_id;
@@ -20,8 +19,6 @@ export module Construction{
 		constructor(player_id:number,data_needed:number) {
 			super(player_id,data_needed);
 		}
-
-
 	}
 
 	export class Building extends Block {
@@ -31,6 +28,10 @@ export module Construction{
 		constructor(player_id:number,data_needed:number,energy_consuption:number){
 			super(player_id,data_needed);
 			this.energy_consuption=energy_consuption;
+		}
+
+		consume():number{
+			return this.data_needed;
 		}
 	}
 }
