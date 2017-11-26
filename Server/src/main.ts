@@ -1,9 +1,13 @@
-import * as express from "express";
+//import * as express from "express";
+import {Server} from "./server";
+import {Game} from "./game";
 
-var app = express();
+var client_serv=new Server();
 
-app.use(express.static('../Client/dist'));
 
-//var clk=new Timer();
+client_serv.use();
 
-app.listen(3000);
+
+
+client_serv.listen(3000);
+

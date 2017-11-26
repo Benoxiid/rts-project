@@ -2,8 +2,8 @@ import * as bodyParser from "body-parser";
 import * as express from "express";
 import * as path from "path";
 
-export module Server{
-	export class Serv_com{
+//export module Com{
+	export class Server{
 		private app:express.Application;
 
 		constructor() {
@@ -12,10 +12,6 @@ export module Server{
 
     		//configure application
     		//this.config();
-  		}
-
-		public static bootstrap(): Serv_com {
-    		return new Serv_com();
   		}
 
 		public use(){
@@ -27,7 +23,7 @@ export module Server{
 		}
 	}
 
-	export class Serv_db{
+	export class Client_db{
 
 	}
-}
+//}
